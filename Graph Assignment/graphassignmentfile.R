@@ -2,9 +2,9 @@ install.packages("ggrepel")
 install.packages("ggplot2")
 library(ggplot2)
 food <- read.csv("food.csv")
-head(Food)
+head(food)
 
-ggplot(data = food, aes(x = Ã¯..identity, y = percent, fill=level)) +
+ggplot(data = food, aes(x = ï..identity, y = percent, fill=level)) +
   geom_bar(stat="identity") +
   coord_flip() +
   ggtitle("Level of Food Security Among \nAboriginal Peoples in Canada") +
